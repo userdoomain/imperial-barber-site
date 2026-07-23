@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6c67a"/>
+      <stop offset="50%" style="stop-color:#c8a44b"/>
+      <stop offset="100%" style="stop-color:#8a6a24"/>
+    </linearGradient>
+    <linearGradient id="darkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2a2a2a"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer ring -->
+  <circle cx="100" cy="100" r="92" fill="none" stroke="url(#goldGrad)" stroke-width="3"/>
+
+  <!-- Inner ring -->
+  <circle cx="100" cy="100" r="85" fill="none" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.5"/>
+
+  <!-- Background -->
+  <circle cx="100" cy="100" r="82" fill="url(#darkGrad)"/>
+
+  <!-- Crown at top -->
+  <path d="M70 70 L75 58 L85 65 L95 52 L105 65 L115 58 L120 70 Z"
+        fill="url(#goldGrad)" opacity="0.9"/>
+
+  <!-- Left scissor blade -->
+  <path d="M88 80 Q75 95 70 110 Q68 118 72 120 Q78 120 80 112 Q84 100 92 88 Z"
+        fill="url(#goldGrad)" opacity="0.85"/>
+
+  <!-- Right scissor blade -->
+  <path d="M112 80 Q125 95 130 110 Q132 118 128 120 Q122 120 120 112 Q116 100 108 88 Z"
+        fill="url(#goldGrad)" opacity="0.85"/>
+
+  <!-- Scissor pivot -->
+  <circle cx="100" cy="90" r="4" fill="#0a0a0a"/>
+  <circle cx="100" cy="90" r="3" fill="url(#goldGrad)"/>
+
+  <!-- Left handle -->
+  <ellipse cx="78" cy="125" rx="8" ry="5" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" transform="rotate(-20 78 125)"/>
+
+  <!-- Right handle -->
+  <ellipse cx="122" cy="125" rx="8" ry="5" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" transform="rotate(20 122 125)"/>
+
+  <!-- Comb lines behind scissors -->
+  <line x1="75" y1="82" x2="75" y2="118" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="80" y1="80" x2="80" y2="116" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="120" y1="80" x2="120" y2="116" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+  <line x1="125" y1="82" x2="125" y2="118" stroke="url(#goldGrad)" stroke-width="1.5" opacity="0.4"/>
+
+  <!-- Divider line -->
+  <line x1="55" y1="142" x2="145" y2="142" stroke="url(#goldGrad)" stroke-width="1" opacity="0.6"/>
+
+  <!-- Text "IMPERIAL" -->
+  <text x="100" y="158" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="19" font-weight="700" letter-spacing="3" fill="url(#goldGrad)">IMPERIAL</text>
+
+  <!-- Text "BARBER" -->
+  <text x="100" y="172" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-size="9" font-weight="500" letter-spacing="4" fill="#b8b8b8">BARBER</text>
+
+  <!-- Decorative diamonds -->
+  <polygon points="50,142 53,145 50,148 47,145" fill="url(#goldGrad)" opacity="0.6"/>
+  <polygon points="150,142 153,145 150,148 147,145" fill="url(#goldGrad)" opacity="0.6"/>
+
+  <!-- Small stars on sides -->
+  <text x="30" y="145" text-anchor="middle" font-family="Georgia" font-size="8" fill="url(#goldGrad)" opacity="0.4">✦</text>
+  <text x="170" y="145" text-anchor="middle" font-family="Georgia" font-size="8" fill="url(#goldGrad)" opacity="0.4">✦</text>
+</svg>
