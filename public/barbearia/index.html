@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Barbearia Imperial | Cortes Masculinos de Luxo em São Paulo</title>
+  <meta name="description" content="Barbearia Imperial: experiência premium em cortes masculinos, barba e estética. Ambiente sofisticado, barbeiros especialistas e atendimento de altíssimo padrão." />
+  <meta name="keywords" content="barbearia, barbearia de luxo, corte masculino, barba, pigmentação, sobrancelha, São Paulo" />
+  <meta name="author" content="Barbearia Imperial" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Barbearia Imperial | Experiência Premium em Estética Masculina" />
+  <meta property="og:description" content="Cortes, barba e cuidados masculinos em um ambiente luxuoso. Agende seu horário na Barbearia Imperial." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="../favicon.ico" type="image/x-icon" />
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- AOS (animações ao scroll) -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script defer src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===================== NAVBAR ===================== -->
+  <header id="navbar" class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Barbearia Imperial - Início">
+        <img src="images/logo.png" alt="Logo Barbearia Imperial" class="brand-logo" />
+        <div class="brand-text">
+          <span class="brand-title">Barbearia Imperial</span>
+          <span class="brand-sub">Since 2012</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#equipe">Equipe</a>
+        <a href="#antes-depois">Antes & Depois</a>
+        <a href="#depoimentos">Avaliações</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contato">Contato</a>
+        <a href="#agendar" class="btn btn-gold btn-sm">Agendar</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===================== HERO ===================== -->
+  <section id="home" class="hero">
+    <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <span class="eyebrow" data-aos="fade-up">Tradição · Estilo · Excelência</span>
+      <h1 data-aos="fade-up" data-aos-delay="100">
+        A arte de <span class="gold">cortar</span><br />
+        elevada ao nível <span class="gold">imperial</span>.
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="200">
+        Um ritual masculino de cuidado, precisão e sofisticação.
+        Bem-vindo à barbearia mais premiada da cidade.
+      </p>
+      <div class="hero-cta" data-aos="fade-up" data-aos-delay="300">
+        <a href="#agendar" class="btn btn-gold">Agendar Horário</a>
+        <a href="#servicos" class="btn btn-outline">Ver Serviços</a>
+      </div>
+    </div>
+    <a href="#servicos" class="scroll-indicator" aria-label="Rolar para baixo">
+      <i data-lucide="chevron-down"></i>
+    </a>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Nossos Serviços</span>
+        <h2>Cuidado <span class="gold">sob medida</span> para você</h2>
+        <p>Serviços premium executados por barbeiros mestres, com produtos de alto padrão.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card service-card" data-aos="fade-up">
+          <div class="icon-box"><i data-lucide="scissors"></i></div>
+          <h3>Corte Masculino</h3>
+          <p>Corte personalizado, finalização com styling e ritual de acabamento.</p>
+          <div class="price">R$ 70</div>
+        </article>
+
+        <article class="card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box"><i data-lucide="user"></i></div>
+          <h3>Barba</h3>
+          <p>Modelagem, toalha quente, óleos essenciais e navalha tradicional.</p>
+          <div class="price">R$ 55</div>
+        </article>
+
+        <article class="card service-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box"><i data-lucide="palette"></i></div>
+          <h3>Pigmentação</h3>
+          <p>Densidade capilar e uniformidade com técnica de camuflagem avançada.</p>
+          <div class="price">R$ 90</div>
+        </article>
+
+        <article class="card service-card" data-aos="fade-up">
+          <div class="icon-box"><i data-lucide="sparkles"></i></div>
+          <h3>Combo Corte + Barba</h3>
+          <p>Experiência completa: corte, barba, hidratação e acabamento premium.</p>
+          <div class="price">R$ 110</div>
+        </article>
+
+        <article class="card service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box"><i data-lucide="eye"></i></div>
+          <h3>Sobrancelha</h3>
+          <p>Design masculino com pinça e navalha, valorizando o olhar.</p>
+          <div class="price">R$ 30</div>
+        </article>
+
+        <article class="card service-card highlight" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box"><i data-lucide="crown"></i></div>
+          <h3>Pacote Imperial</h3>
+          <p>Corte + Barba + Sobrancelha + Hidratação + Máscara Facial.</p>
+          <div class="price">R$ 160</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GALERIA ===================== -->
+  <section id="galeria" class="section section-alt">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Galeria</span>
+        <h2>Cortes que contam <span class="gold">histórias</span></h2>
+        <p>Uma seleção de trabalhos realizados pelos nossos mestres barbeiros.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure data-aos="zoom-in"><img src="images/gallery1.jpg" alt="Corte fade com barba" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="80"><img src="images/gallery2.jpg" alt="Undercut moderno" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="160"><img src="images/gallery3.jpg" alt="Pompadour clássico" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="240"><img src="images/gallery4.jpg" alt="Textured crop com lineup" loading="lazy" /></figure>
+        <figure data-aos="zoom-in"><img src="images/gallery1.jpg" alt="Corte executivo" loading="lazy" /></figure>
+        <figure data-aos="zoom-in" data-aos-delay="80"><img src="images/gallery3.jpg" alt="Barba desenhada" loading="lazy" /></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EQUIPE ===================== -->
+  <section id="equipe" class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Nossa Equipe</span>
+        <h2>Mestres da <span class="gold">navalha</span></h2>
+        <p>Profissionais com mais de 10 anos de experiência e certificações internacionais.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <article class="card team-card" data-aos="fade-up">
+          <div class="team-photo"><img src="images/team1.jpg" alt="Barbeiro Rafael Torres" loading="lazy" /></div>
+          <h3>Rafael Torres</h3>
+          <span class="role">Head Barber · Fundador</span>
+          <p>Especialista em cortes clássicos e barbas desenhadas. Formado em Londres.</p>
+        </article>
+        <article class="card team-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="team-photo"><img src="images/team2.jpg" alt="Barbeiro Lucas Andrade" loading="lazy" /></div>
+          <h3>Lucas Andrade</h3>
+          <span class="role">Master Barber</span>
+          <p>Referência em fades, texturas e trabalhos com máquina de precisão.</p>
+        </article>
+        <article class="card team-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="team-photo"><img src="images/team3.jpg" alt="Barbeiro Diego Martins" loading="lazy" /></div>
+          <h3>Diego Martins</h3>
+          <span class="role">Senior Barber</span>
+          <p>Expert em navalha tradicional, pigmentação e cuidados com a pele.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANTES E DEPOIS ===================== -->
+  <section id="antes-depois" class="section section-alt">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Transformações</span>
+        <h2>Antes & <span class="gold">Depois</span></h2>
+        <p>Resultados reais dos nossos clientes.</p>
+      </div>
+      <div class="before-after" data-aos="fade-up">
+        <img src="images/beforeafter.jpg" alt="Transformação antes e depois" loading="lazy" />
+        <div class="ba-labels">
+          <span>Antes</span>
+          <span>Depois</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== DIFERENCIAIS ===================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Diferenciais</span>
+        <h2>Por que escolher a <span class="gold">Imperial</span></h2>
+      </div>
+      <div class="grid grid-4">
+        <div class="feature" data-aos="fade-up"><i data-lucide="award"></i><h4>Barbeiros Premiados</h4><p>Reconhecidos em campeonatos nacionais.</p></div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="80"><i data-lucide="glass-water"></i><h4>Whisky & Café</h4><p>Cortesias para tornar sua visita única.</p></div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="160"><i data-lucide="clock"></i><h4>Pontualidade</h4><p>Respeitamos o seu tempo. Sem espera.</p></div>
+        <div class="feature" data-aos="fade-up" data-aos-delay="240"><i data-lucide="shield-check"></i><h4>Ambiente Higienizado</h4><p>Ferramentas esterilizadas a cada cliente.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== AVALIAÇÕES ===================== -->
+  <section id="depoimentos" class="section section-alt">
+    <div class="container">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Avaliações</span>
+        <h2>O que dizem <span class="gold">nossos clientes</span></h2>
+      </div>
+      <div class="grid grid-3">
+        <blockquote class="card testimonial" data-aos="fade-up">
+          <div class="stars">★★★★★</div>
+          <p>"Melhor barbearia que já frequentei. Atendimento impecável e resultado sempre acima da expectativa."</p>
+          <footer>— Bruno Almeida</footer>
+        </blockquote>
+        <blockquote class="card testimonial" data-aos="fade-up" data-aos-delay="100">
+          <div class="stars">★★★★★</div>
+          <p>"Ambiente sofisticado, whisky cortesia e barbeiros que entendem do que fazem. Recomendo demais."</p>
+          <footer>— Felipe Ribeiro</footer>
+        </blockquote>
+        <blockquote class="card testimonial" data-aos="fade-up" data-aos-delay="200">
+          <div class="stars">★★★★★</div>
+          <p>"Fiz o pacote imperial e saí outro homem. Detalhes que fazem toda a diferença."</p>
+          <footer>— André Cavalcante</footer>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq" class="section">
+    <div class="container faq-wrap">
+      <div class="section-head" data-aos="fade-up">
+        <span class="eyebrow">Dúvidas Frequentes</span>
+        <h2>Perguntas <span class="gold">Frequentes</span></h2>
+      </div>
+      <div class="faq" data-aos="fade-up">
+        <details><summary>Preciso agendar horário?<i data-lucide="plus"></i></summary><p>Recomendamos o agendamento para garantir o horário e o barbeiro de sua preferência. Aceitamos também atendimento por ordem de chegada.</p></details>
+        <details><summary>Quais formas de pagamento vocês aceitam?<i data-lucide="plus"></i></summary><p>Aceitamos dinheiro, PIX, débito e todas as bandeiras de crédito, incluindo parcelamento em até 3x sem juros.</p></details>
+        <details><summary>Vocês atendem crianças?<i data-lucide="plus"></i></summary><p>Sim! Temos barbeiros especializados em atendimento infantil com muita paciência.</p></details>
+        <details><summary>Quanto tempo dura o Pacote Imperial?<i data-lucide="plus"></i></summary><p>Em média 1h30, para você aproveitar cada etapa do ritual com calma.</p></details>
+        <details><summary>Vocês vendem produtos para uso em casa?<i data-lucide="plus"></i></summary><p>Sim, trabalhamos com marcas premium como pomadas, óleos para barba e shampoos importados.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== HORÁRIO + LOCALIZAÇÃO + AGENDAR ===================== -->
+  <section id="contato" class="section section-alt">
+    <div class="container grid grid-2 contact-grid">
+      <div data-aos="fade-right" id="agendar">
+        <span class="eyebrow">Visite-nos</span>
+        <h2>Horário e <span class="gold">Localização</span></h2>
+        <ul class="hours">
+          <li><span>Segunda a Sexta</span><span>09h — 21h</span></li>
+          <li><span>Sábado</span><span>08h — 20h</span></li>
+          <li><span>Domingo</span><span>10h — 16h</span></li>
+        </ul>
+        <div class="contact-info">
+          <p><i data-lucide="map-pin"></i> Av. Paulista, 1200 · Bela Vista · São Paulo/SP</p>
+          <p><i data-lucide="phone"></i> (11) 4002-8922</p>
+          <p><i data-lucide="mail"></i> contato@barbeariaimperial.com.br</p>
+        </div>
+        <a href="https://wa.me/5511940028922?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" class="btn btn-gold" target="_blank" rel="noopener">Agendar pelo WhatsApp</a>
+      </div>
+
+      <div class="map-wrap" data-aos="fade-left">
+        <div class="map">
+          <div class="map-pin-anim"><i data-lucide="map-pin"></i></div>
+          <div class="map-grid"></div>
+          <div class="map-label">Barbearia Imperial<br /><small>Av. Paulista, 1200</small></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="brand">
+          <img src="images/logo.png" alt="" class="brand-logo" />
+          <div class="brand-text">
+            <span class="brand-title">Barbearia Imperial</span>
+            <span class="brand-sub">Estilo & Tradição</span>
+          </div>
+        </div>
+        <p class="footer-text">O ritual masculino de cuidado elevado ao mais alto padrão desde 2012.</p>
+      </div>
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#equipe">Equipe</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contato</h5>
+        <ul>
+          <li>Av. Paulista, 1200 · SP</li>
+          <li>(11) 4002-8922</li>
+          <li>contato@barbeariaimperial.com.br</li>
+        </ul>
+      </div>
+      <div>
+        <h5>Redes Sociais</h5>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+          <a href="#" aria-label="TikTok"><i data-lucide="music"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© <span id="year"></span> Barbearia Imperial. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/5511940028922?text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20um%20hor%C3%A1rio" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+    <i data-lucide="message-circle"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
