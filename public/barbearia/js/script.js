@@ -44,6 +44,28 @@
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // ============ Antes & Depois slider ============
+  const baWrap = document.querySelector(".ba-img-wrap");
+  const baAfter = document.querySelector(".ba-after");
+  const baHandle = document.getElementById("baHandle");
+  if (baWrap && baAfter && baHandle) {
+    let dragging = false;
+    const move = (x) => {
+      const rect = baWrap.getBoundingClientRect();
+      let pct = ((x - rect.left) / rect.width) * 100;
+      if (pct < 5) pct = 5;
+      if (pct > 95) pct = 95;
+      baAfter.style.clipPath = `inset(0 ${100 - pct}% 0 0)`;
+      baHandle.style.left = pct + "%";
+    };
+    baHandle.addEventListener("mousedown", (e) => { dragging = true; e.preventDefault(); });
+    baHandle.addEventListener("touchstart", (e) => { dragging = true; e.preventDefault(); });
+    document.addEventListener("mousemove", (e) => { if (dragging) move(e.clientX); });
+    document.addEventListener("touchmove", (e) => { if (dragging) move(e.touches[0].clientX); }, { passive: true });
+    document.addEventListener("mouseup", () => { dragging = false; });
+    document.addEventListener("touchend", () => { dragging = false; });
+  }
+
   // ============ Scroll suave para âncoras (fallback) ============
   document.querySelectorAll('a[href^="#"]').forEach((a) => {
     a.addEventListener("click", (e) => {
