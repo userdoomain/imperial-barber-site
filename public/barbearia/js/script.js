@@ -44,6 +44,66 @@
   const year = document.getElementById("year");
   if (year) year.textContent = new Date().getFullYear();
 
+  // ============ ReactBits-style: Scramble text no H1 do hero ============
+  const scrambleChars = "!<>-_\\/[]{}—=+*^?#________";
+  const scrambleEl = document.querySelector(".hero h1");
+  if (scrambleEl) {
+    const originalHtml = scrambleEl.innerHTML;
+    const collectText = (node) => {
+      let t = "";
+      node.childNodes.forEach((n) => {
+        if (n.nodeType === 3) t += n.textContent;
+        else t += collectText(n);
+      });
+      return t;
+    };
+    const totalLen = collectText(scrambleEl).replace(/\s+/g, " ").length;
+    let frame = 0;
+    const applyScramble = () => {
+      const done = Math.floor((frame / 45) * totalLen);
+      let count = 0;
+      const walk = (node) => {
+        Array.from(node.childNodes).forEach((n) => {
+          if (n.nodeType === 3) {
+            const raw = n.textContent;
+            let out = "";
+            for (let i = 0; i < raw.length; i++) {
+              if (raw[i] === "\n" || raw[i] === "\r" || raw[i] === " " || raw[i] === "\t") {
+                out += raw[i];
+                continue;
+              }
+              out += count < done ? raw[i] : scrambleChars[Math.floor(Math.random() * scrambleChars.length)];
+              count++;
+            }
+            n.textContent = out;
+          } else if (n.nodeType === 1) walk(n);
+        });
+      };
+      walk(scrambleEl);
+      frame++;
+      if (frame <= 45) requestAnimationFrame(applyScramble);
+      else {
+        scrambleEl.innerHTML = originalHtml;
+        initIcons();
+      }
+    };
+    requestAnimationFrame(applyScramble);
+  }
+
+  // ============ ReactBits-style: Botões magnéticos no hero ============
+  document.querySelectorAll(".hero-cta .btn").forEach((btn) => {
+    const strength = 18;
+    btn.addEventListener("mousemove", (e) => {
+      const r = btn.getBoundingClientRect();
+      const x = (e.clientX - r.left - r.width / 2) / (r.width / 2);
+      const y = (e.clientY - r.top - r.height / 2) / (r.height / 2);
+      btn.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+    });
+    btn.addEventListener("mouseleave", () => {
+      btn.style.transform = "translate(0, 0)";
+    });
+  });
+
   // ============ Antes & Depois slider ============
   const baWrap = document.querySelector(".ba-img-wrap");
   const baAfter = document.querySelector(".ba-after");
